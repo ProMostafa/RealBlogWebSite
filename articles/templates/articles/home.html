@@ -1,0 +1,24 @@
+{% extends 'articles/base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+				<div class="new">
+		 				<h3><a href="{% url 'add' %}">Add New Article</a></h3>
+				</div>
+	{% endif %}
+{% for obj in objs %}
+	<div class="content">
+			<label id="postnum">#{{obj.id}}</label>
+			{% if user.is_authenticated %}
+					<h2><a href="{% url 'details' obj.pk %}">{{obj.title}}</a></h2>
+			{% else %}
+				<h2>{{obj.title}}</a></h2>
+			{% endif %}
+			<p>{{obj.text}}</p>
+			<label id="time">{{obj.date}}</label>
+			<label id="comment"><i class="icon-pencil" ></i><a href="{% url 'Addcomment' obj.pk %}">Comment</a></label>
+			<p>{{obj.comment}}</p>
+</div>
+{% endfor %}
+		
+{% endblock %}

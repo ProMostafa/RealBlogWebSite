@@ -1,0 +1,10 @@
+{% extends 'articles/base.html' %}
+{% block title %}SingUp Page {% endblock %}
+{% block login %}
+
+<form method="POST" action="">
+	{% csrf_token%}
+	{{form.as_p}}
+	<input type="submit" value="SingUp">
+</form>
+{% endblock %}

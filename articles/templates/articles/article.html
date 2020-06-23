@@ -1,0 +1,12 @@
+{% extends 'articles/base.html' %}
+
+{% block title %} Add Aritcle {% endblock %}
+{% block content %}
+<h1>Enter Your New Aritcle Here</h1>
+<form action="" method="POST">
+
+	{% csrf_token %}
+	 {{ form.as_p }}
+	 <input type="submit" name="submit" value="Save">
+</form>
+{% endblock %}

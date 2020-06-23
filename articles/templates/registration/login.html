@@ -1,0 +1,15 @@
+{% extends 'articles/base.html' %}
+{% block title %}Login Page {% endblock %}
+{% load crispy_forms_tags %}
+{% block login %}
+
+
+	<form method="POST" action="">
+		
+		{% csrf_token%}
+		{{ form.as_p}}
+		<input type="submit" value="Login">
+
+	</form>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+
+h1
+{
+	font-size: 2.5rem;
+	text-align: center;
+	margin-top: 25px;
+}
+body
+{
+	background-color: #636e72;
+	color: #FFF;
+	text-align: center;
+}
+a{
+  color: brown;
+}
+p
+{
+	font-size: 20px;
+}
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+.a1
+{
+	font-style: italic;
+}
+#id1
+{
+	color: rgba(0,0,0,.5);
+	padding: 0px;
+}
+.container
+{
+	margin-top: 20px;
+	padding: 20px;
+	background-color: black;
+	
+}
+.content
+{
+	border: solid;
+	border-width: 2px;
+	margin-top: 20px;
+}
+.content #time
+{
+	margin-left: -900px;
+	color: blue;
+}
+.content #postnum
+{
+	font-size: 25px;
+	font-weight: bold;
+	margin-left:  1050px;
+	color: blue;
+	margin-top: 10px;
+}
+.content #comment
+{
+	display: inline;
+	margin-left:  900px;
+	color: blue;
+	margin-bottom: 5px;
+}
+.post
+{
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #126e55;
+	margin-bottom: 20px;
+	width: 800px;
+	margin-left: 260px;
+	padding: 5px;
+
+}
+.helptext
+{
+	display: none;
+}
+.login
+{
+	width: 300px;
+	margin-left: 500px;
+
+}
+
+#hint_id_password1 {
+    display: none;
+}
+#hint_id_password2{
+    display: none;
+}
+.text-muted {
+    display: none;
+}
+.navbar-text
+{
+	margin-left: 450px;
+	font-family: cursive;
+	font-size: 45px;
+	font-weight: bold;
+	padding: 0px;
+}
+.link
+{
+	padding: 0px;
+	padding-left: 5px;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 30px;
+  padding: 10px;
+  margin-left: -5px;
+
+}
+.div1
+{
+	background-color:rgba(0,0,0,.1);
+}
+
+#Warning
+{
+	font-size: 30px;
+	font-style: italic;
+	color: red;
+}
+.edit
+{
+	width: 300px;
+}
+#word
+{
+	margin-left:50px;
+}

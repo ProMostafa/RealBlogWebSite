@@ -1,0 +1,13 @@
+{% extends 'articles/base.html' %}
+{% block title %}Comment Page {% endblock %}
+{% block content %}
+
+	<h2>{{obj.title}}</h2>
+	<p>{{obj.text}}</p>
+	<form action="{% url 'comment' obj.id %}" method="POST">
+		{% csrf_token %}
+		<textarea name="comment" cols="40" rows="10"> Type Your Comment</textarea>
+		<br>
+	 <input type="submit" name="submit" value="Save">
+</form>
+{% endblock %}
